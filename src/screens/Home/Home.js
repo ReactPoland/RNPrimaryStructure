@@ -3,11 +3,9 @@ import PropTypes from 'prop-types';
 import {
   SafeAreaView,
   StyleSheet,
-  ScrollView,
   View,
   Text,
-  StatusBar,
-  TouchableOpacity
+  FlatList
 } from 'react-native';
 
 import {
@@ -24,78 +22,29 @@ import api from '../../network/api';
 
 const propTypes = {}
 
-export default class Home extends Component {
-  static navigationOptions = {
-    title: ' '
-  };
-
-  state = {
-    restoreView: false
-  };
-
-  render() {
-    return (
-      <View style={styles.container}>
-        <DefaultView
-          {...this.props}
-          goToScene={() => this.props.navigation.navigate('Tests')}
+export default function Home (props) {
+  console.log(props.cocktailsData)
+  return (
+    <View style={styles.container}>
+      <SafeAreaView>
+      {
+        <FlatList
+          data={props.cocktailsData}
+          renderItem={({item}) => {
+            console.log('item ', item)
+            return <Text style={{ color: 'black' }}>{item.strDrink}</Text>}}
         />
-      </View>
-    )
-  }
+      }
+      </SafeAreaView>
+    </View>
+  )
 }
 
-const DefaultView = ({
-  getCocktails,
-  cocktailsData,
-  cocktailsPending,
-  cocktailsError,
-}) => (
-  <Fragment>
-    <StatusBar barStyle="light-content" />
-    <SafeAreaView>
-      <ScrollView
-        accessible
-        accessibilityLabel={'scrollView'}
-        contentInsetAdjustmentBehavior="automatic"
-        style={styles.scrollView}
-      >
-        <Header />
-        <View style={styles.engine}>
-          {global.HermesInternal == null ? null : (
-            <Text style={styles.footer}>Engine: Hermes</Text>
-          )}
-          <Text style={styles.footer}>
-            Translation test: {i18next.t('key')}
-          </Text>
-        </View>
-        <View style={styles.body}>
-          <View style={styles.sectionContainer}>
-            <Text style={styles.sectionTitle} onPress={getCocktails}>
-              COCKTAILS
-            </Text>
-            {cocktailsPending && (
-              <Text style={styles.sectionDescription}>
-                COCKTAILS PENDING...
-              </Text>
-            )}
-            {cocktailsError && (
-              <Text style={styles.sectionDescription}>
-                Error: {cocktailsError}
-              </Text>
-            )}
-            {cocktailsData && (
-              <Text style={styles.sectionDescription}>
-                COCKTAILS DATA:
-                {cocktailsData.map(data => '\n' + JSON.stringify(data))}
-              </Text>
-            )}
-          </View>
-        </View>
-      </ScrollView>
-    </SafeAreaView>
-  </Fragment>
-)
+Home.navigationOptions = {
+  title: 'Random Drinks',
+  headerTintColor: '#000',
+  headerTitleStyle :{ flex: 1, textAlign: 'center',alignSelf:'center'},
+}
 
 Home.propTypes = propTypes
 

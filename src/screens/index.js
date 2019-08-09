@@ -3,16 +3,23 @@ import {
     createAppContainer
   } from 'react-navigation';
 import HomeScreen from './Home'
-import TestsScreen from './Tests'
 
 const MainNavigator = createStackNavigator({
-  Home: HomeScreen,
-  Tests: TestsScreen 
+  Home: HomeScreen
 }, {
-  navigationOptions: {
-    headerTintColor: 'black',
-    headerStyle: {
-      backgroundColor: '#1D213C'
+  Home: {
+    screen: HomeScreen,
+    navigationOptions: {
+      header: {
+        title: 'TITLE',
+        titleStyle: {
+          color: 'black',
+          align: 'center',
+          textAlign:'center',
+          fontFamily: 'MuseoSansRounded-300',
+          fontWeight: '500'
+        }
+      }
     }
   }
 })
