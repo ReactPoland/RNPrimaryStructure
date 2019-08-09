@@ -1,7 +1,8 @@
-import axios from 'axios'
-import queryString from 'query-string'
+import axios from 'axios';
+import queryString from 'query-string';
 
-export const host = `https://jsonplaceholder.typicode.com`
+const apiVersion = '/api/json/v1/';
+const host = "http://www.thecocktaildb.com" + apiVersion;
 
 const customAxios = axios.create({
   baseURL: host,
@@ -16,12 +17,11 @@ const createApiUrl = (pathArr, query) => {
 }
 
 const api = {
-  axios,
-  getTouch () {
+  getCocktailGlassData() {
     return customAxios({
-      requestId: 'getTouch',
+      requestId: 'getCocktailGlassData',
       method: 'get',
-      url: createApiUrl([ 'todos', '1' ])
+      url: createApiUrl(['1', 'filter.php'], { g: 'Cocktail_glass' })
     })
   }
 }
