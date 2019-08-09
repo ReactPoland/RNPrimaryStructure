@@ -8,25 +8,25 @@ import {
   ActivityIndicator
 } from 'react-native';
 import { DrinkBox } from '../../components/DrinkBox/DrinkBox'
+import { ErrorLabel } from '../../components/ErrorLabel/ErrorLabel'
 
 const propTypes = {}
 
 export default function Home (props) {
   return (
-    <View style={styles.container}>
+    <SafeAreaView style={styles.container}>
       <StatusBar
         barStyle="dark-content"
         backgroundColor="#6a51ae"
       />
-      <SafeAreaView>
+      {props.cocktailsError && <ErrorLabel getCocktails={props.getCocktails} />}
       {
-        props.cocktailsPending ? <ActivityIndicator size="large" color="white" /> : <FlatList
+        props.cocktailsPending ? <ActivityIndicator size='large' color='white' /> : <FlatList
           data={props.cocktailsData}
           renderItem={({item}) => <DrinkBox strDrink={item.strDrink} strDrinkThumb={item.strDrinkThumb} idDrink={item.idDrink}/>}
         />
       }
       </SafeAreaView>
-    </View>
   )
 }
 
