@@ -62,6 +62,7 @@ buck-out/
 *.jsbundle
 
 # CocoaPods
+/ios/Pods/
 /template/ios/Pods/
 /template/ios/Podfile.lock
 RNTester/Pods/Local Podspecs
