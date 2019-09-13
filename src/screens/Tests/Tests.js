@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react'
+import React, { Component, Fragment, useState } from 'react'
 import PropTypes from 'prop-types'
 import {
     Button,
@@ -19,18 +19,10 @@ import api from '../../network/api'
 const propTypes = {
 }
 
-export default class Tests extends Component {
-  static navigationOptions = {
-    title: ' '
-  }
+const Tests = () => {
+  const [password, setPassword] = useState('')
+  const [isPassed, setIsPassed] = useState(false)
 
-  state = {
-    password: '',
-    isPassed: false
-  }
-
-  render () {
-    const { isPassed, password } = this.state
     return (
       <View style={styles.container}>
         <TextInput
@@ -38,19 +30,18 @@ export default class Tests extends Component {
           accessibilityLabel={'PasswordInput'}
           testID={'PasswordInput'}
           style={{ borderBottomWidth: 1, borderBottomColor: 'black', marginHorizontal: 10 }}
-          onChangeText={password => this.setState({ password })}
+          onChangeText={password => setPassword(password)}
           secureTextEntry />
         <Button
           accessible
           accessibilityLabel={'ConfirmButton'}
-          onPress={() => { password === '123456' && this.setState({ isPassed: true })}}
+          onPress={() => { password === '123456' && setIsPassed(true) }}
           title={isPassed ? "Test passed" : "Test"}
           color={isPassed ? 'green' : 'blue'} />
         <Text style={styles.description}>1. Use <RedText>yarn build:android</RedText> or <RedText>yarn build:ios</RedText> for create app to example test.</Text>
         <Text style={styles.description}>2. Run your build with <RedText>yarn test:android</RedText> or <RedText>yarn test:ios.</RedText></Text>
       </View>
     )
-  }
 }
 
 const RedText = (props) => (
@@ -59,7 +50,9 @@ const RedText = (props) => (
   </Text>
 )
 
-
+Tests.navigationOptions = {
+  title: ' '
+}
 
 Tests.propTypes = propTypes
 
@@ -74,3 +67,5 @@ const styles = StyleSheet.create({
       color: Colors.dark,
     }
 })
+
+export default Tests

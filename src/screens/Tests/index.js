@@ -1,8 +1,10 @@
-import { connect } from 'react-redux'
+import React from 'react'
 import Tests from './Tests'
 
-const mapDispatchToProps = {}
+const TestsScreen = () => {
+  const props = {
+  }
+  return <Tests {...props} />
+}
 
-const mapStateToProps = ({ session }) => ({})
-
-export default connect(mapStateToProps, mapDispatchToProps)(Tests)
+export default TestsScreen

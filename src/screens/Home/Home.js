@@ -25,22 +25,12 @@ import api from '../../network/api'
 const propTypes = {
 }
 
-export default class Home extends Component {
-  static navigationOptions = {
-    title: ' '
-  }
-
-  state = {
-    restoreView: false
-  }
-
-  render () {
+const Home = (props) => {
     return (
       <View style={styles.container}>
-        <DefaultView goToScene={() => this.props.navigation.navigate('Tests')}/>
+        <DefaultView goToScene={() => props.navigate('Tests')}/>
       </View>
     )
-  }
 }
 
 const DefaultView = ({ store, goToScene }) => (
@@ -108,6 +98,10 @@ const DefaultView = ({ store, goToScene }) => (
     </Fragment>
 )
 
+Home.navigationOptions = {
+  title: ' '
+}
+
 Home.propTypes = propTypes
 
 const styles = StyleSheet.create({
@@ -145,12 +139,12 @@ const styles = StyleSheet.create({
       justifyContent: 'space-between',
       alignItems: 'center',
       paddingVertical: 8,
+      paddingHorizontal: 24,
     },
     link: {
       flex: 2,
       fontSize: 18,
       fontWeight: '400',
-      marginLeft: 24,
       color: Colors.primary,
     },
     description: {
@@ -177,3 +171,5 @@ const styles = StyleSheet.create({
       textAlign: 'right',
     },
 })
+
+export default Home
