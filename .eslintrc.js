@@ -4,3 +4,4 @@ module.exports = {
     '@react-native-community',
     'prettier'
   ]
+}
