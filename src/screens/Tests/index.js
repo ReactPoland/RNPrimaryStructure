@@ -2,8 +2,7 @@ import React from 'react'
 import Tests from './Tests'
 
 const TestsScreen = () => {
-  const props = {
-  }
+  const props = {}
   return <Tests {...props} />
 }
 

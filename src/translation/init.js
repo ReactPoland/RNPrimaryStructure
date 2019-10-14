@@ -18,7 +18,7 @@ const onLanguageChange = () => {
 const updateMomentLocale = () => {
   const currentLanguage = getCurrentLanguage(supportedLanguages)
   const calendarConfig = {
-    calendar : {
+    calendar: {
       sameDay: `[${Translation.t('Today')}]`,
       nextDay: `[${Translation.t('Tomorrow')}]`,
       nextWeek: 'dddd',
@@ -28,7 +28,10 @@ const updateMomentLocale = () => {
     }
   }
 
-  let languageConfig = { key: defaultLanguage.key, setting: defaultLanguage.momentSetting }
+  let languageConfig = {
+    key: defaultLanguage.key,
+    setting: defaultLanguage.momentSetting
+  }
   supportedLanguages.map(lang => {
     if (currentLanguage.includes(lang.key)) {
       languageConfig = { key: lang.key, setting: lang.momentSetting }

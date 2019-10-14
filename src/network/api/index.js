@@ -17,11 +17,11 @@ const createApiUrl = (pathArr, query) => {
 
 const api = {
   axios,
-  getTouch () {
+  getTouch() {
     return customAxios({
       requestId: 'getTouch',
       method: 'get',
-      url: createApiUrl([ 'todos', '1' ])
+      url: createApiUrl(['todos', '1'])
     })
   }
 }

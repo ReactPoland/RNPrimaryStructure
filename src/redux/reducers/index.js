@@ -1,11 +1,9 @@
 import { combineReducers } from 'redux'
-import session, {
-  resetState as resetStateSession
-} from './session/reducer'
+import session, { resetState as resetStateSession } from './session/reducer'
 import { RESET_REDUCER } from './session/actions'
 
 const reducers = combineReducers({
-    session
+  session
 })
 
 const rootReducer = (state, action) => {

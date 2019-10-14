@@ -34,8 +34,6 @@ const config = {
   }
 }
 
-i18n
-  .use(initReactI18next)
-  .init(config)
+i18n.use(initReactI18next).init(config)
 
 export default i18n
