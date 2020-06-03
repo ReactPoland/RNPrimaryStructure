@@ -24,7 +24,7 @@ import api from '../../network/api'
 
 const propTypes = {}
 
-const Home = props => {
+const Home = (props) => {
   return (
     <View style={styles.container}>
       <DefaultView goToScene={() => props.navigate('Tests')} />

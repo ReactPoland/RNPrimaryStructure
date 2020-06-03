@@ -1,23 +1,17 @@
-import { createAppContainer } from 'react-navigation'
-import { createStackNavigator } from 'react-navigation-stack'
+import * as React from 'react'
+import { createStackNavigator } from '@react-navigation/stack'
 import HomeScreen from './Home'
 import TestsScreen from './Tests'
 
-const MainNavigator = createStackNavigator(
-  {
-    Home: HomeScreen,
-    Tests: TestsScreen
-  },
-  {
-    defaultNavigationOptions: {
-      headerTintColor: 'black',
-      headerStyle: {
-        backgroundColor: 'white'
-      }
-    }
-  }
-)
+const RootStack = createStackNavigator()
 
-const App = createAppContainer(MainNavigator)
+const App = () => {
+  return (
+    <RootStack.Navigator>
+      <RootStack.Screen name="Home" component={HomeScreen} />
+      <RootStack.Screen name="Tests" component={TestsScreen} />
+    </RootStack.Navigator>
+  )
+}
 
 export default App

@@ -25,7 +25,7 @@ const Tests = () => {
           borderBottomColor: 'black',
           marginHorizontal: 10
         }}
-        onChangeText={password => setPassword(password)}
+        onChangeText={(password) => setPassword(password)}
         secureTextEntry
       />
       <Button
@@ -49,7 +49,7 @@ const Tests = () => {
   )
 }
 
-const RedText = props => (
+const RedText = (props) => (
   <Text style={[styles.description, { color: 'red' }]}>{props.children}</Text>
 )
 
