@@ -13,13 +13,14 @@
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		1728A1005BE761D4AEB0F6E7 /* libPods-PrimaryStructure.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B58C81D1205F52436E375938 /* libPods-PrimaryStructure.a */; };
+		19FBA840D5F5E7C17F2ABA27 /* libPods-PrimaryStructure-PrimaryStructureTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 23C65EE3D27A261B9C0F19FA /* libPods-PrimaryStructure-PrimaryStructureTests.a */; };
 		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* PrimaryStructureTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* PrimaryStructureTests.m */; };
+		543757A92489BBAB00695965 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543757A82489BBAB00695965 /* File.swift */; };
 		6655A61B50302CA0060E10A7 /* libPods-PrimaryStructure-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AD994CCEC1D4DDE90F025EF /* libPods-PrimaryStructure-tvOSTests.a */; };
 		7A59AA6DF3CD1ABC20AA97B4 /* libPods-PrimaryStructure-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AC99EE837167F8C5E3B70CB0 /* libPods-PrimaryStructure-tvOS.a */; };
-		CE9B424C5317BDF2B5DF4C57 /* libPods-PrimaryStructureTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 291DA6FF3E6F918D2EFC20CD /* libPods-PrimaryStructureTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,14 +54,18 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = PrimaryStructure/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = PrimaryStructure/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = PrimaryStructure/main.m; sourceTree = "<group>"; };
-		291DA6FF3E6F918D2EFC20CD /* libPods-PrimaryStructureTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PrimaryStructureTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		23C65EE3D27A261B9C0F19FA /* libPods-PrimaryStructure-PrimaryStructureTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PrimaryStructure-PrimaryStructureTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E47B1E0B4A5D006451C7 /* PrimaryStructure-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PrimaryStructure-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* PrimaryStructure-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PrimaryStructure-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		543757A72489BBAA00695965 /* PrimaryStructure-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PrimaryStructure-Bridging-Header.h"; sourceTree = "<group>"; };
+		543757A82489BBAB00695965 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		552469191FCDFD6A990B38BF /* Pods-PrimaryStructure-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PrimaryStructure-tvOS.release.xcconfig"; path = "Target Support Files/Pods-PrimaryStructure-tvOS/Pods-PrimaryStructure-tvOS.release.xcconfig"; sourceTree = "<group>"; };
 		57533BCC0FA7BAD955A96AB6 /* Pods-PrimaryStructure.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PrimaryStructure.debug.xcconfig"; path = "Target Support Files/Pods-PrimaryStructure/Pods-PrimaryStructure.debug.xcconfig"; sourceTree = "<group>"; };
 		5A070B57AAA7C95C9C4152E9 /* Pods-PrimaryStructure-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PrimaryStructure-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-PrimaryStructure-tvOSTests/Pods-PrimaryStructure-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		5AD994CCEC1D4DDE90F025EF /* libPods-PrimaryStructure-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PrimaryStructure-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B9AA4087CCEF7E9308B3F3C /* Pods-PrimaryStructure-PrimaryStructureTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PrimaryStructure-PrimaryStructureTests.debug.xcconfig"; path = "Target Support Files/Pods-PrimaryStructure-PrimaryStructureTests/Pods-PrimaryStructure-PrimaryStructureTests.debug.xcconfig"; sourceTree = "<group>"; };
 		745EED2F69E7E1D6EC8823C1 /* Pods-PrimaryStructure-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PrimaryStructure-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-PrimaryStructure-tvOSTests/Pods-PrimaryStructure-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		81C5DC3D4943EEA82ADF77AF /* Pods-PrimaryStructure-PrimaryStructureTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PrimaryStructure-PrimaryStructureTests.release.xcconfig"; path = "Target Support Files/Pods-PrimaryStructure-PrimaryStructureTests/Pods-PrimaryStructure-PrimaryStructureTests.release.xcconfig"; sourceTree = "<group>"; };
 		AC99EE837167F8C5E3B70CB0 /* libPods-PrimaryStructure-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PrimaryStructure-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B37F3D419B3149AB8FFD2648 /* Pods-PrimaryStructure-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PrimaryStructure-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-PrimaryStructure-tvOS/Pods-PrimaryStructure-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		B58C81D1205F52436E375938 /* libPods-PrimaryStructure.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PrimaryStructure.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -74,7 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE9B424C5317BDF2B5DF4C57 /* libPods-PrimaryStructureTests.a in Frameworks */,
+				19FBA840D5F5E7C17F2ABA27 /* libPods-PrimaryStructure-PrimaryStructureTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,10 +133,12 @@
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
+				543757A82489BBAB00695965 /* File.swift */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
+				543757A72489BBAA00695965 /* PrimaryStructure-Bridging-Header.h */,
 			);
 			name = PrimaryStructure;
 			sourceTree = "<group>";
@@ -144,7 +151,7 @@
 				B58C81D1205F52436E375938 /* libPods-PrimaryStructure.a */,
 				AC99EE837167F8C5E3B70CB0 /* libPods-PrimaryStructure-tvOS.a */,
 				5AD994CCEC1D4DDE90F025EF /* libPods-PrimaryStructure-tvOSTests.a */,
-				291DA6FF3E6F918D2EFC20CD /* libPods-PrimaryStructureTests.a */,
+				23C65EE3D27A261B9C0F19FA /* libPods-PrimaryStructure-PrimaryStructureTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -193,8 +200,9 @@
 				5A070B57AAA7C95C9C4152E9 /* Pods-PrimaryStructure-tvOSTests.release.xcconfig */,
 				05205F88E0FD0445C9C5DCD2 /* Pods-PrimaryStructureTests.debug.xcconfig */,
 				0B24DB01B2CA69AB24B0E682 /* Pods-PrimaryStructureTests.release.xcconfig */,
+				6B9AA4087CCEF7E9308B3F3C /* Pods-PrimaryStructure-PrimaryStructureTests.debug.xcconfig */,
+				81C5DC3D4943EEA82ADF77AF /* Pods-PrimaryStructure-PrimaryStructureTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -209,6 +217,7 @@
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
+				21D8DC2BF036B8B15C74043C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -230,6 +239,7 @@
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
+				1AB2CD433D9147275E75D158 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -292,6 +302,9 @@
 						CreatedOnToolsVersion = 6.2;
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
+					13B07F861A680F5B00A75B9A = {
+						LastSwiftMigration = 1150;
+					};
 					2D02E47A1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;
 						ProvisioningStyle = Automatic;
@@ -308,6 +321,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -373,6 +387,42 @@
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
 		};
+		1AB2CD433D9147275E75D158 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PrimaryStructure/Pods-PrimaryStructure-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/AccessibilityResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AccessibilityResources.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PrimaryStructure/Pods-PrimaryStructure-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		21D8DC2BF036B8B15C74043C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PrimaryStructure-PrimaryStructureTests/Pods-PrimaryStructure-PrimaryStructureTests-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/AccessibilityResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AccessibilityResources.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PrimaryStructure-PrimaryStructureTests/Pods-PrimaryStructure-PrimaryStructureTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -424,7 +474,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-PrimaryStructureTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-PrimaryStructure-PrimaryStructureTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -529,6 +579,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
+				543757A92489BBAB00695965 /* File.swift in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -580,8 +631,9 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 05205F88E0FD0445C9C5DCD2 /* Pods-PrimaryStructureTests.debug.xcconfig */;
+			baseConfigurationReference = 6B9AA4087CCEF7E9308B3F3C /* Pods-PrimaryStructure-PrimaryStructureTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -590,6 +642,10 @@
 				INFOPLIST_FILE = PrimaryStructureTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DFB_SONARKIT_ENABLED=1",
+				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-lc++",
@@ -603,13 +659,18 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0B24DB01B2CA69AB24B0E682 /* Pods-PrimaryStructureTests.release.xcconfig */;
+			baseConfigurationReference = 81C5DC3D4943EEA82ADF77AF /* Pods-PrimaryStructure-PrimaryStructureTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
 				INFOPLIST_FILE = PrimaryStructureTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DFB_SONARKIT_ENABLED=1",
+				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-lc++",
@@ -626,10 +687,19 @@
 			baseConfigurationReference = 57533BCC0FA7BAD955A96AB6 /* Pods-PrimaryStructure.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEAD_CODE_STRIPPING = NO;
+				ENABLE_BITCODE = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"FB_SONARKIT_ENABLED=1",
+				);
 				INFOPLIST_FILE = PrimaryStructure/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DFB_SONARKIT_ENABLED=1",
+				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -637,6 +707,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = PrimaryStructure;
+				SWIFT_OBJC_BRIDGING_HEADER = "PrimaryStructure-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
@@ -646,9 +719,14 @@
 			baseConfigurationReference = DE07C7958797BEC21E117C10 /* Pods-PrimaryStructure.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				INFOPLIST_FILE = PrimaryStructure/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DFB_SONARKIT_ENABLED=1",
+				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -656,6 +734,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = PrimaryStructure;
+				SWIFT_OBJC_BRIDGING_HEADER = "PrimaryStructure-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
@@ -675,6 +755,10 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "PrimaryStructure-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DFB_SONARKIT_ENABLED=1",
+				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -703,6 +787,10 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "PrimaryStructure-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DFB_SONARKIT_ENABLED=1",
+				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -730,6 +818,10 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "PrimaryStructure-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DFB_SONARKIT_ENABLED=1",
+				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -757,6 +849,10 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "PrimaryStructure-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DFB_SONARKIT_ENABLED=1",
+				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -816,7 +912,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -862,7 +958,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
