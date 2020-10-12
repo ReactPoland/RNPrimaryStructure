@@ -32,13 +32,13 @@ const updateMomentLocale = () => {
     key: defaultLanguage.key,
     setting: defaultLanguage.momentSetting
   }
-  supportedLanguages.map(lang => {
+  supportedLanguages.map((lang) => {
     if (currentLanguage.includes(lang.key)) {
       languageConfig = { key: lang.key, setting: lang.momentSetting }
     }
   })
 
-  moment.updateLocale(languageConfig.key, {
+  moment.defineLocale(languageConfig.key, {
     ...languageConfig.setting,
     ...calendarConfig
   })
