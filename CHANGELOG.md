@@ -1,5 +1,19 @@
-
 # Changelog
+
+## v1.1.0 - 2021-01-18
+
+Compare with previous version - https://github.com/ReactPoland/RNPrimaryStructure/compare/1e8d3304cd8fb281a6d0f8d1438ac162bbdd2865...80310c5c6d856bef39aafdcd7eb766ae64259b12
+
+### Added
+- missing peer dependencies for navigation libs
+
+### Changed
+
+- update react-native library to 0.63.4
+- update outdated libraries
+
+### Fixed
+- remove manual link for iOS pods
 
 ## v1.0.0 - 2021-01-18
 
