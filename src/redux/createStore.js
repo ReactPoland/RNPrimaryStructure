@@ -3,7 +3,6 @@ import { createStore } from 'redux'
 import { persistStore, persistReducer } from 'redux-persist'
 import autoMergeLevel2 from 'redux-persist/lib/stateReconciler/autoMergeLevel2'
 import AsyncStorage from '@react-native-async-storage/async-storage'
-import logger from 'redux-logger'
 import rootReducer from './reducers'
 import thunk from 'redux-thunk'
 
@@ -16,7 +15,7 @@ const persistConfig = {
 const persistedReducer = persistReducer(persistConfig, rootReducer)
 
 const configureStore = (initialState = {}) => {
-  const enhancer = compose(applyMiddleware(thunk, logger))
+  const enhancer = compose(applyMiddleware(thunk))
   return createStore(persistedReducer, initialState, enhancer)
 }
 
