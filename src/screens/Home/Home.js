@@ -46,6 +46,11 @@ const DefaultView = ({ store, goToScene }) => (
           {global.HermesInternal == null ? null : (
             <Text style={styles.footer}>Engine: Hermes</Text>
           )}
+          {!global._v8runtime ? null : (
+            <Text style={styles.footer}>
+              Engine: V8 {global._v8runtime().version}
+            </Text>
+          )}
           <Text style={styles.footer}>
             Translation test: {i18next.t('key')}
           </Text>

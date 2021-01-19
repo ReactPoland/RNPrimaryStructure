@@ -1,4 +1,5 @@
 apply plugin: "com.android.application"
+apply from: project(':react-native-config').projectDir.getPath() + "/dotenv.gradle"
 
 import com.android.build.OutputFile
 
@@ -79,7 +80,8 @@ import com.android.build.OutputFile
 
 project.ext.react = [
     entryFile: "index.js",
-    enableHermes: true,  // clean and rebuild if changing
+    enableV8: rootProject.ext.enableV8,  // clean and rebuild if changing
+    enableHermes: rootProject.ext.enableHermes,  // clean and rebuild if changing
 ]
 
 apply from: "../../node_modules/react-native/react.gradle"
@@ -122,6 +124,8 @@ def jscFlavor = 'org.webkit:android-jsc:+'
  */
 def enableHermes = project.ext.react.get("enableHermes", false);
 
+def enableV8 = project.ext.react.get("enableV8", false);
+
 android {
     compileSdkVersion rootProject.ext.compileSdkVersion
 
@@ -132,6 +136,9 @@ android {
         pickFirst '**/x86_64/libc++_shared.so'
         pickFirst '**/x86/libjsc.so'
         pickFirst '**/armeabi-v7a/libjsc.so'
+        if (enableV8) {
+          exclude '**/libjsc.so'
+        }
     }
 
     compileOptions {
@@ -213,10 +220,13 @@ dependencies {
         exclude group:'com.facebook.flipper'
     }
 
-    if (enableHermes) {
-       def hermesPath = "../../node_modules/hermes-engine/android/";
-        debugImplementation files(hermesPath + "hermes-debug.aar")
-        releaseImplementation files(hermesPath + "hermes-release.aar")
+    if (enableV8) {
+      // Add v8-android - prebuilt libv8android.so into APK
+      implementation 'org.chromium:v8-android:+'
+    } else if (enableHermes) {
+      def hermesPath = "../../node_modules/hermes-engine/android/";
+      debugImplementation files(hermesPath + "hermes-debug.aar")
+      releaseImplementation files(hermesPath + "hermes-release.aar")
     } else {
         implementation jscFlavor
     }

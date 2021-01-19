@@ -67,3 +67,6 @@ buck-out/
 /template/ios/Podfile.lock
 RNTester/Pods/Local Podspecs
 RNTester/Pods/Target Support Files
+
+# react-native-config codegen
+ios/tmp.xcconfig

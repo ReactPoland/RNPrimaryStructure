@@ -1,0 +1,12 @@
+//
+//  Config.xcconfig
+//  PrimaryStructure
+//
+//  Created by Łukasz Kubica on 19/01/2021.
+//  Copyright © 2021 Facebook. All rights reserved.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+#include? "tmp.xcconfig"

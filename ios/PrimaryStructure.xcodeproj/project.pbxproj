@@ -66,6 +66,7 @@
 		6B9AA4087CCEF7E9308B3F3C /* Pods-PrimaryStructure-PrimaryStructureTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PrimaryStructure-PrimaryStructureTests.debug.xcconfig"; path = "Target Support Files/Pods-PrimaryStructure-PrimaryStructureTests/Pods-PrimaryStructure-PrimaryStructureTests.debug.xcconfig"; sourceTree = "<group>"; };
 		745EED2F69E7E1D6EC8823C1 /* Pods-PrimaryStructure-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PrimaryStructure-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-PrimaryStructure-tvOSTests/Pods-PrimaryStructure-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		81C5DC3D4943EEA82ADF77AF /* Pods-PrimaryStructure-PrimaryStructureTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PrimaryStructure-PrimaryStructureTests.release.xcconfig"; path = "Target Support Files/Pods-PrimaryStructure-PrimaryStructureTests/Pods-PrimaryStructure-PrimaryStructureTests.release.xcconfig"; sourceTree = "<group>"; };
+		98E5768E25B6F7D0006FAE76 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		AC99EE837167F8C5E3B70CB0 /* libPods-PrimaryStructure-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PrimaryStructure-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B37F3D419B3149AB8FFD2648 /* Pods-PrimaryStructure-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PrimaryStructure-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-PrimaryStructure-tvOS/Pods-PrimaryStructure-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		B58C81D1205F52436E375938 /* libPods-PrimaryStructure.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PrimaryStructure.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -166,6 +167,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				98E5768E25B6F7D0006FAE76 /* Config.xcconfig */,
 				13B07FAE1A68108700A75B9A /* PrimaryStructure */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* PrimaryStructureTests */,
@@ -932,6 +934,7 @@
 		};
 		83CBBA201A601CBA00E9B192 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98E5768E25B6F7D0006FAE76 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -985,6 +988,7 @@
 		};
 		83CBBA211A601CBA00E9B192 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98E5768E25B6F7D0006FAE76 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";

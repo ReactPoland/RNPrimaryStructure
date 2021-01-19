@@ -7,6 +7,8 @@ buildscript {
         compileSdkVersion = 29
         targetSdkVersion = 29
         supportLibVersion = "28.0.0"
+        enableV8 = false  // clean and rebuild if changing
+        enableHermes = true  // clean and rebuild if changing
     }
     repositories {
         google()
@@ -24,9 +26,18 @@ allprojects {
     repositories {
         mavenLocal()
         maven {
+          if (enableV8) {
+            // Replace AAR from original RN with AAR from react-native-v8
+            url("$rootDir/../node_modules/react-native-v8/dist")
+          } else {
             // All of React Native (JS, Obj-C sources, Android binaries) is installed from npm
             url("$rootDir/../node_modules/react-native/android")
+          }
         }
+        maven {
+            // prebuilt libv8android.so
+            url("$rootDir/../node_modules/v8-android-jit-nointl/dist")
+         }
         maven {
             // Android JSC is installed from npm
             url("$rootDir/../node_modules/jsc-android/dist")
