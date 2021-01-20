@@ -147,13 +147,15 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.reactpoland"
+        applicationId project.env.get("ANDROID_APP_ID")
+        applicationIdSuffix project.env.get("ANDROID_APP_ID_SUFFIX")
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
-        versionName "1.0"
+        versionName project.env.get("APP_VERSION")
         testBuildType System.getProperty('testBuildType', 'debug')  // This will later be used to control the test apk build type
         testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
+        resValue "string", "build_config_package", "com.reactpoland"
     }
     splits {
         abi {

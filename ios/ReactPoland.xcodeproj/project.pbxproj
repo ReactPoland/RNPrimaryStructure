@@ -762,6 +762,7 @@
 				);
 				INFOPLIST_FILE = ReactPoland/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = "$(APP_VERSION)";
 				OTHER_CFLAGS = (
 					"$(inherited)",
 					"-DFB_SONARKIT_ENABLED=1",
@@ -771,7 +772,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.ReactPoland;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(IOS_BUNDLE_ID)$(IOS_BUNDLE_ID_SUFFIX)";
 				PRODUCT_NAME = ReactPoland;
 				SWIFT_OBJC_BRIDGING_HEADER = "ReactPoland-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -789,6 +790,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				INFOPLIST_FILE = ReactPoland/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = "$(APP_VERSION)";
 				OTHER_CFLAGS = (
 					"$(inherited)",
 					"-DFB_SONARKIT_ENABLED=1",
@@ -798,7 +800,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.ReactPoland;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(IOS_BUNDLE_ID)$(IOS_BUNDLE_ID_SUFFIX)";
 				PRODUCT_NAME = ReactPoland;
 				SWIFT_OBJC_BRIDGING_HEADER = "ReactPoland-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
