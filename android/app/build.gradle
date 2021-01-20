@@ -147,7 +147,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.primarystructure"
+        applicationId "com.reactpoland"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1

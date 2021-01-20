@@ -1,4 +1,4 @@
-package com.primarystructure;
+package com.reactpoland;
 
 import android.app.Application;
 import android.content.Context;

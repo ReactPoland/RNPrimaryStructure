@@ -28,13 +28,13 @@ end
 
 platform :ios, '10.0'
 
-target 'PrimaryStructure' do
+target 'ReactPoland' do
   config = use_native_modules!
 
   use_react_native!(:path => config["reactNativePath"])
   
 
-  target 'PrimaryStructureTests' do
+  target 'ReactPolandTests' do
     inherit! :complete
     # Pods for testing
   end
@@ -49,10 +49,10 @@ target 'PrimaryStructure' do
   end
 end
 
-target 'PrimaryStructure-tvOS' do
+target 'ReactPoland-tvOS' do
   # Pods for RnDiffApp-tvOS
 
-  target 'PrimaryStructure-tvOSTests' do
+  target 'ReactPoland-tvOSTests' do
     inherit! :search_paths
     # Pods for testing
   end
