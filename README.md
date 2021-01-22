@@ -27,5 +27,5 @@ They work only on release builds - as set inside 'serviceprovider' folder.
 2. Rebuild app and sync gradle (on Android)
 3. Firebase: 
 If you want to change app id remember to create a new firebase app with that id and update Google files ('GoogleService-Info.plist' and 'google-services.json') inside your project. If you don't need firebase services during the development process - you can make that change only when you will work on distribution process.
-
+4. When you run android from terminal remember to specify your suffix id to automaticly open app - `react-native run-android --appIdSuffix 'HERE_SUFFIX_WITHOUT_DOT'`
 
