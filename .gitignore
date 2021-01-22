@@ -35,6 +35,9 @@ local.properties
 .settings
 .classpath
 
+# Android Profiling
+*.hprof
+
 # node.js
 #
 node_modules/
