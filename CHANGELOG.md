@@ -1,5 +1,17 @@
 # Changelog
 
+## v1.3.0 - 2021-01-22
+
+Compare with previous version - https://github.com/ReactPoland/RNPrimaryStructure/compare/5e791bfe0261b9cddd84eb9dd91cdaae28f2dc8b...a5afc92cfd007aca00fe47672474289ebe3eed56
+
+### Added
+- firebase with services - analytics, perf, crashlytics
+- ignore android .hprof files - .gitignore
+- apply absolute path
+
+### Fixed
+- build settings for release builds
+
 ## v1.2.0 - 2021-01-20
 
 Compare with previous version - https://github.com/ReactPoland/RNPrimaryStructure/compare/80310c5c6d856bef39aafdcd7eb766ae64259b12...5e791bfe0261b9cddd84eb9dd91cdaae28f2dc8b

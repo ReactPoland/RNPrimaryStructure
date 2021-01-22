@@ -1,4 +1,4 @@
-Version 1.2.0
+Version 1.3.0
 
 # React-Native project starter
 
@@ -16,3 +16,7 @@ After change rebuild the project.
 'ANDROID_APP_ID' and 'IOS_BUNDLE_ID' should not be changed for internal ReactPoland projects
 
 '..._ID_SUFFIX' keys should be use to specify project product name (for internal ReactPoland projects)
+
+## Firebase
+Firebase enabled by default with given services - analytics, crashlytics and performance monitor.
+They work only on release builds - as set inside 'serviceprovider' folder.
