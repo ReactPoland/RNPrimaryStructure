@@ -18,9 +18,9 @@ import {
   ReloadInstructions
 } from 'react-native/Libraries/NewAppScreen'
 
-import i18next from '../../translation'
+import i18next from 'appservices/translation'
 
-import api from '../../network/api'
+import api from 'appnetwork/api'
 
 const propTypes = {}
 

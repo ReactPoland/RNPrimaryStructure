@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react'
-import AppNavigator from './screens'
+import AppNavigator from 'appscreens'
 import { Provider } from 'react-redux'
-import { store, persistor } from './redux/createStore'
+import { store, persistor } from 'appredux/createStore'
 import { PersistGate } from 'redux-persist/integration/react'
 import { NavigationContainer } from '@react-navigation/native'
-import { initServices } from './serviceprovider'
+import { initServices } from 'appserviceprovider'
 
 const initializeApp = () => {
   const listenersRemover = initServices()

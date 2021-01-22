@@ -3,7 +3,7 @@ import Home from './Home'
 import { useNavigation } from '@react-navigation/native'
 import { useDispatch, useSelector } from 'react-redux'
 import { compose } from 'ramda'
-import { login } from '../../redux/reducers/session/actions'
+import { login } from 'appredux/reducers/session/actions'
 
 const HomeScreen = () => {
   const dispatch = useDispatch()
