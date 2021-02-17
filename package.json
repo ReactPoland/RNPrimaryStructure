@@ -3,7 +3,7 @@
   "version": "1.3.0",
   "private": true,
   "scripts": {
-    "start": "react-native start",
+    "start": "react-native start --reset-cache",
     "postinstall": "sh ./scripts/postinstall.sh",
     "test": "jest",
     "test:ios": "detox test --configuration ios.sim.debug",
