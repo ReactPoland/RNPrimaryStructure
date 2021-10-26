@@ -1,14 +1,8 @@
-/**
- * @format
- */
+import React from 'react'
+import renderer from 'react-test-renderer'
+import Tests from '../src/screens/Tests/Tests'
 
-import 'react-native';
-import React from 'react';
-import App from '../App';
-
-// Note: test renderer must be required after react-native.
-import renderer from 'react-test-renderer';
-
-it('renders correctly', () => {
-  renderer.create(<App />);
-});
+test('renders correctly', () => {
+  const tree = renderer.create(<Tests />).toJSON()
+  expect(tree).toMatchSnapshot()
+})

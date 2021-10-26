@@ -1,4 +1,4 @@
-import * as RNLocalize from 'react-native-localize'
+import { findBestAvailableLanguage } from 'react-native-localize'
 
 export const getCurrentLanguage = supportedLanguages => {
   const fallback = { languageTag: 'en', isRTL: false }
@@ -7,6 +7,7 @@ export const getCurrentLanguage = supportedLanguages => {
     translations[lang.key] = lang.translationFile
   })
   const { languageTag } =
-    RNLocalize.findBestAvailableLanguage(Object.keys(translations)) || fallback
+    findBestAvailableLanguage(Object.keys(translations)) || fallback
+
   return languageTag
 }

@@ -1,11 +1,11 @@
-import * as RNLocalize from 'react-native-localize'
+import { addEventListener } from 'react-native-localize'
 import Translation from './index'
 import moment from 'moment'
 import { supportedLanguages, defaultLanguage } from './supportedLanguages'
 import { getCurrentLanguage } from './utils'
 
 const initTranslation = () => {
-  RNLocalize.addEventListener('change', onLanguageChange)
+  addEventListener('change', onLanguageChange)
   updateMomentLocale()
 }
 
@@ -32,7 +32,7 @@ const updateMomentLocale = () => {
     key: defaultLanguage.key,
     setting: defaultLanguage.momentSetting
   }
-  supportedLanguages.map((lang) => {
+  supportedLanguages.map(lang => {
     if (currentLanguage.includes(lang.key)) {
       languageConfig = { key: lang.key, setting: lang.momentSetting }
     }

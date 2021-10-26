@@ -1,0 +1,169 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <TextInput
+    accessibilityLabel="PasswordInput"
+    accessible={true}
+    onChangeText={[Function]}
+    secureTextEntry={true}
+    style={
+      Object {
+        "borderBottomColor": "black",
+        "borderBottomWidth": 1,
+        "marginHorizontal": 10,
+      }
+    }
+    testID="PasswordInput"
+  />
+  <View
+    accessibilityLabel="ConfirmButton"
+    accessibilityRole="button"
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    nativeID="animatedComponent"
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "opacity": 1,
+      }
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {},
+        ]
+      }
+    >
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#007AFF",
+              "fontSize": 18,
+              "margin": 8,
+              "textAlign": "center",
+            },
+            Object {
+              "color": "blue",
+            },
+          ]
+        }
+      >
+        Test
+      </Text>
+    </View>
+  </View>
+  <Text
+    style={
+      Object {
+        "color": "#444",
+        "fontSize": 18,
+        "paddingHorizontal": 35,
+        "paddingVertical": 5,
+      }
+    }
+  >
+    1. Use 
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#444",
+            "fontSize": 18,
+            "paddingHorizontal": 35,
+            "paddingVertical": 5,
+          },
+          Object {
+            "color": "red",
+          },
+        ]
+      }
+    >
+      yarn build:android
+    </Text>
+     or
+     
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#444",
+            "fontSize": 18,
+            "paddingHorizontal": 35,
+            "paddingVertical": 5,
+          },
+          Object {
+            "color": "red",
+          },
+        ]
+      }
+    >
+      yarn build:ios
+    </Text>
+     for create app to example test.
+  </Text>
+  <Text
+    style={
+      Object {
+        "color": "#444",
+        "fontSize": 18,
+        "paddingHorizontal": 35,
+        "paddingVertical": 5,
+      }
+    }
+  >
+    2. Run your build with 
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#444",
+            "fontSize": 18,
+            "paddingHorizontal": 35,
+            "paddingVertical": 5,
+          },
+          Object {
+            "color": "red",
+          },
+        ]
+      }
+    >
+      yarn test:android
+    </Text>
+     or
+     
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#444",
+            "fontSize": 18,
+            "paddingHorizontal": 35,
+            "paddingVertical": 5,
+          },
+          Object {
+            "color": "red",
+          },
+        ]
+      }
+    >
+      yarn test:ios.
+    </Text>
+  </Text>
+</View>
+`;
